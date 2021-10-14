@@ -1,0 +1,45 @@
+Suggested time: 15 mins
+
+You will be operating on the following "data" with regular
+expressions.  The lines are numbered, but /do not/ form part of the
+data.
+
+00: Beautiful is better than ugly.
+01: Explicit is better than implicit.
+02: Simple is better than complex.
+03: Complex is better than complicated.
+04: Flat is better than nested.
+05: Sparse is better than dense.
+06: Readability counts.
+07: Special cases aren't special enough to break the rules.
+08: Although practicality beats purity.
+09: Errors should never pass silently.
+10: Unless explicitly silenced.
+11: In the face of ambiguity, refuse the temptation to guess.
+12: There should be one-- and preferably only one --obvious way to do it.
+13: Although that way may not be obvious at first unless you're Dutch.
+14: Now is better than never.
+15: Although never is often better than *right* now.
+16: If the implementation is hard to explain, it's a bad idea.
+17: If the implementation is easy to explain, it may be a good idea.
+18: Namespaces are one honking great idea -- let's do more of those!
+
+What lines are matched by the following regular expressions?  If none
+match, write nil.
+
+A: /^I/            ----------------------- Line 11,16,17
+
+B: /implementation.*hard/ --------------- Line 16
+
+C: /readability/  ----------------------- Nil
+
+
+Write a regular expression that matches the given line.  Use the
+/minimum/ amount of characters achieve the match, but ensure that only
+one line matches.
+
+D: match line 02    -----------------/^Si.*/
+
+E: match line 12   -----------------/--o/
+
+F: match line 06  ------------------- /^R.*/

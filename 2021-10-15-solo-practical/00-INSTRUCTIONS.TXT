@@ -1,0 +1,11 @@
+Please complete the exercises outlined in the following files:
+
+01.txt
+02.py
+03.py
+04.py
+05.py
+06.py
+07.py
+08.py
+09.py
