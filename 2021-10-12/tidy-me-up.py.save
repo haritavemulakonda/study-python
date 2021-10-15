@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+# the object of this exercise is to tidy up this code.
+#
+# it is not guaranteed to be correct.
+#
+# is there any redundant code that could be refactored away?
+#
+# is it tidy and consistent?
+
+
+"How many miles to the park? ")
+miles_to_park = 
+
+
+miles_to_park = input("How many miles to the park? ")
+print("It is", miles_to_park / 0.6213712, "km to my park")
+mts=input("How many miles to the shops? ")
+print("It is", mts/ 0.6213712, "km to my shops")
+milestow =input("How many miles to work? ")
+print("It is", mts/0.6213712, "km to my work")
