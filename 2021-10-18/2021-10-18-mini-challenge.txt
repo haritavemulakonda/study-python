@@ -1,0 +1,30 @@
+"""PAUL 2021-10-18 MINI CHALLENGE
+Time allocated: 30 mins
+
+Write a program that reads the data file given as the first argument
+on the command line.
+
+Your task is to locate the shortest line, and the longest line.
+
+Print these two lines out, along with number of characters in that
+line.
+
+(Hint: classes may be used, but are not necessary)"""
+#!/usr/bin/python3
+
+
+import sys
+
+list_sentence = []
+if (len(sys.argv) <= 1):
+    print("Usage: python main.py filename")
+    exit(1)
+with open(sys.argv[1], "r") as file:
+    for line in file:
+        list_sentence.append(line)
+    result = sorted(list_sentence, key=lambda string1: len(string1))
+    '''print(result)'''
+    n = len(result)
+
+    print(f"Shortest line {result[0]}  of lenght: {len(result[0])}")
+    print(f"Longest line {result[n - 1]}  of lenght: {len(result[n - 1])}")
