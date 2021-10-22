@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+i = 0
+with open("example.mbox") as f:
+    for l in f:
+        print("{: 02d} {}", i, l)
