@@ -45,7 +45,20 @@ How to
  Run commands using netmiko across VM's
  https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md#connecting-to-multiple-devices
 
-
+ Create Jinja template
+ https://jinja.palletsprojects.com/en/3.0.x/templates/
+ 
+ Run Jinja template to generate file
+ https://jinja.palletsprojects.com/en/3.0.x/api/#basics
+ 
+ Get HTML file in python
+ https://docs.python.org/3/library/http.client.html
+ 
+ Bonus:
+ 
+ 1) While running the Jinja script prompt user to provide input to be shown in the HTML pages.
+ 2) 50% code coverage
+ 3) Good naming conventions
 
 
 
