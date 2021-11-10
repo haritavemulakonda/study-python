@@ -1,0 +1,64 @@
+User Story
+
+As a devosp engineer
+I should be able to configure new templates for webservers
+so that I can deploy webservers on ubuntu
+
+As a devosp engineer
+I should be able to use nginx as the server
+so that I can serve http files from the server
+
+As a devosp engineer
+I should be able to use automatically install nginx
+And configure the server based on input config file
+so that I can customise the webservers running on diiiferent vm's
+
+------------------------------------------------------------------
+
+1) Use Jinja2 to create a template for creating nginx templates
+2) Create one server in each VM --> VM1 run server on port 8080, VM2 run server on port 8081
+3) Deploy two HTML files, VM1 --> Show return "Hello world", VM2 --> Show "From second VM"
+4) From The system where you are running the scripts validate that the servers are running and we are getting the correct responses.
+
+-------------------------------------------------------------------
+How to 
+
+1) Create a new Jinja template that can be used to configure Nginx server (https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
+2) Create another Jinja template to create a html file
+2) Create a new python progream to
+  1) Read the Jinja template and generate two NGINX server config files locally.
+  2) Read the HTML jinja template and generate two HTML files
+  2) Use netmiko and install nginx in both of the VM's
+  3) Using netmiko transfer generated config file(local) to nginx and the html to nginx server locations.
+  4) Start the service using netwmiko
+  5) Verify from program that we can access http://vm1-host-ip:8080/index.html and http://vm2-host-ip:8081/index.html
+  6) Print the response in a local file.
+  
+ Note: Do not use Ansible.
+ 
+ Reference:
+ https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/
+ 
+ Transfer file using netmiko
+ https://pynet.twb-tech.com/blog/automation/netmiko-scp.html
+ 
+ Run commands using netmiko across VM's
+ https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md#connecting-to-multiple-devices
+
+ Create Jinja template
+ https://jinja.palletsprojects.com/en/3.0.x/templates/
+ 
+ Run Jinja template to generate file
+ https://jinja.palletsprojects.com/en/3.0.x/api/#basics
+ 
+ Get HTML file in python
+ https://docs.python.org/3/library/http.client.html
+ 
+ Bonus:
+ 
+ 1) While running the Jinja script prompt user to provide input to be shown in the HTML pages.
+ 2) 50% code coverage
+ 3) Good naming conventions
+
+
+
